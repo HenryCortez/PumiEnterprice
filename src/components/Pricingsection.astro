@@ -43,6 +43,27 @@ const priceboxes = [
     ],
   },
 ]
+
+const projects = [
+  {
+    title: "Proyecto Starter",
+    image: "/images/starter.png",
+    description: "Este es un proyecto inicial con funcionalidades básicas.",
+    languages: ["JavaScript", "CSS", "HTML"],
+  },
+  {
+    title: "Proyecto Básico",
+    image: "/images/basic.png",
+    description: "Un proyecto más avanzado con más características.",
+    languages: ["React", "Tailwind", "Node.js"],
+  },
+  {
+    title: "Proyecto Premium",
+    image: "/images/premium.png",
+    description: "La versión premium con todas las funcionalidades.",
+    languages: ["TypeScript", "Next.js", "GraphQL"],
+  },
+];
 ---
 
 <!-- ====== Pricing Section Start -->
@@ -54,22 +75,19 @@ const priceboxes = [
     <div class="-mx-4 flex flex-wrap">
       <div class="w-full px-4">
         <div class="mx-auto mb-[60px] max-w-[510px] text-center">
-          <span class="mb-2 block text-lg font-semibold text-primary">
-            Pricing Table
-          </span>
           <h2 class="mb-3 text-3xl font-bold text-dark dark:text-white sm:text-4xl md:leading-[1.2] md:text-[40px]">
-            Awesome Pricing Plan
+            Proyectos Realizados
           </h2>
           <p class="text-base text-body-color dark:text-dark-6">
-            There are many variations of passages of Lorem Ipsum available
-            but the majority have suffered alteration in some form.
+            Aqui encontraras los proyectos que se han realizado por el equipo de PumiLab.
+            Cada uno de ellos son sistemas con Frontend y Backend.
           </p>
         </div>
       </div>
     </div>
 
     <div class="-mx-4 flex flex-wrap justify-center">
-      {priceboxes.map(pricebox => (
+      <!-- {priceboxes.map(pricebox => (
         <div class="w-full px-4 md:w-1/2 lg:w-1/3">
           <div
             class={`wow fadeInUp relative z-10 mb-10 overflow-hidden rounded-xl bg-white dark:bg-dark-2 py-10 px-8 shadow-pricing sm:p-12 lg:py-10 lg:px-6 xl:p-14`}
@@ -120,7 +138,9 @@ const priceboxes = [
             </a>
           </div>
         </div>
-      ))}
+      ))} -->
+
+      
     </div>
   </div>
 </section>
