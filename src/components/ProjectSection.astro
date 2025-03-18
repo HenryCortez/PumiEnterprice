@@ -1,0 +1,88 @@
+---
+
+const projects = [
+  {
+    title: "Proyecto Alquiler Vehiculos",
+    image: ["/assets/projects/moviepjr.jpg"],
+    description: "Aplicación móvil para la reseña de películas y watchlist de películas.",
+    languages: ["React Navite", "Expo", "Nestjs"],
+  },
+  {
+    title: "Proyecto de Reserva de Vuelos",
+    image: ["/assets/projects/flights3pj.jpg", "/assets/projects/flightspj.jpg", "/assets/projects/flights2pj.jpg", ],
+    description: "Aplicación web para la reserva de vuelos en Ecuador.",
+    languages: ["Angular", "TypeScript", "C#"],
+  },
+  {
+    title: "Proyecto de Punto de Venta",
+    image: ["/assets/projects/puntoVenta.jpg", "/assets/projects/puntoVenta2.jpg"],
+    description: "Aplicaicón web para la gestión de ventas en un negocio.",
+    languages: ["HTML", "CSS","JS", "C#"],
+  },
+];
+---
+
+<!-- ====== Pricing Section Start -->
+<section
+  id="pricing"
+  class="relative z-20 overflow-hidden bg-white dark:bg-dark pt-20 pb-12 lg:pt-[120px] lg:pb-[90px]"
+>
+  <div class="container">
+    <div class="-mx-4 flex flex-wrap">
+      <div class="w-full px-4">
+        <div class="mx-auto mb-[60px] max-w-[510px] text-center">
+          <h2 class="mb-3 text-3xl font-bold text-dark dark:text-white sm:text-4xl md:leading-[1.2] md:text-[40px]">
+            Proyectos Realizados
+          </h2>
+          <p class="text-base text-body-color dark:text-dark-6">
+            Aqui encontraras los proyectos que se han realizado por el equipo de PumiLab.
+            
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="-mx-4 flex flex-wrap justify-center">
+     
+      {projects.map(project => (
+        <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+          <div class="wow fadeInUp relative z-10 mb-10 overflow-hidden rounded-xl bg-white dark:bg-dark-2 py-10 px-8 shadow-lg sm:p-12 lg:py-10 lg:px-6 xl:p-14" data-wow-delay=".15s">
+            
+            <!-- Título del Proyecto -->
+            <h2 class="mb-4 text-2xl font-semibold text-dark dark:text-white text-center">
+              {project.title}
+            </h2>
+
+            <!-- Imagen Representativa -->
+            <div class="mb-5 flex flex-col items-center">
+              {project.image.map(lang => (
+                  <img src={lang} alt={project.title} class="rounded-lg max-h-fit object-cover w-full mb-8" />
+     
+                ))}
+                     </div>
+
+            <!-- Descripción -->
+            <p class="mb-5 text-base text-body-color dark:text-dark-6 text-center">
+              {project.description}
+            </p>
+
+            <!-- Lenguajes Usados -->
+            <div class="mt-5 text-center">
+              <h5 class="mb-3 text-lg font-medium text-dark dark:text-white">Lenguajes Usados</h5>
+              <div class="flex flex-wrap justify-center gap-3">
+                {project.languages.map(lang => (
+                  <span class="px-4 py-2 rounded-md bg-primary text-white text-sm font-medium">
+                    {lang}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      ))} 
+
+      
+    </div>
+  </div>
+</section>
+<!-- ====== Pricing Section End -->
