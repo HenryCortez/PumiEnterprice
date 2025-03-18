@@ -3,21 +3,21 @@
 const projects = [
   {
     title: "Proyecto Alquiler Vehiculos",
-    image: "/images/starter.png",
-    description: "Un proyecto con el fin de realizar .",
-    languages: ["JavaScript", "CSS", "HTML"],
+    image: ["/assets/projects/moviepjr.jpg"],
+    description: "Aplicación móvil para la reseña de películas y watchlist de películas.",
+    languages: ["React Navite", "Expo", "Nestjs"],
   },
   {
-    title: "Proyecto Básico",
-    image: "/images/basic.png",
-    description: "Un proyecto más avanzado con más características.",
-    languages: ["React", "Tailwind", "Node.js"],
+    title: "Proyecto de Reserva de Vuelos",
+    image: ["/assets/projects/flights3pj.jpg", "/assets/projects/flightspj.jpg", "/assets/projects/flights2pj.jpg", ],
+    description: "Aplicación web para la reserva de vuelos en Ecuador.",
+    languages: ["Angular", "TypeScript", "C#"],
   },
   {
-    title: "Proyecto Premium",
-    image: "/images/premium.png",
-    description: "La versión premium con todas las funcionalidades.",
-    languages: ["TypeScript", "Next.js", "GraphQL"],
+    title: "Proyecto de Punto de Venta",
+    image: ["/assets/projects/puntoVenta.jpg", "/assets/projects/puntoVenta2.jpg"],
+    description: "Aplicaicón web para la gestión de ventas en un negocio.",
+    languages: ["HTML", "CSS","JS", "C#"],
   },
 ];
 ---
@@ -36,7 +36,7 @@ const projects = [
           </h2>
           <p class="text-base text-body-color dark:text-dark-6">
             Aqui encontraras los proyectos que se han realizado por el equipo de PumiLab.
-            Cada uno de ellos son sistemas con Frontend y Backend.
+            
           </p>
         </div>
       </div>
@@ -44,7 +44,7 @@ const projects = [
 
     <div class="-mx-4 flex flex-wrap justify-center">
      
-      {projects.map((project, index) => (
+      {projects.map(project => (
         <div class="w-full px-4 md:w-1/2 lg:w-1/3">
           <div class="wow fadeInUp relative z-10 mb-10 overflow-hidden rounded-xl bg-white dark:bg-dark-2 py-10 px-8 shadow-lg sm:p-12 lg:py-10 lg:px-6 xl:p-14" data-wow-delay=".15s">
             
@@ -54,9 +54,12 @@ const projects = [
             </h2>
 
             <!-- Imagen Representativa -->
-            <div class="mb-5 flex justify-center">
-              <img src={project.image} alt={project.title} class="rounded-lg max-h-48 object-cover" />
-            </div>
+            <div class="mb-5 flex flex-col items-center">
+              {project.image.map(lang => (
+                  <img src={lang} alt={project.title} class="rounded-lg max-h-fit object-cover w-full mb-8" />
+     
+                ))}
+                     </div>
 
             <!-- Descripción -->
             <p class="mb-5 text-base text-body-color dark:text-dark-6 text-center">
@@ -67,7 +70,7 @@ const projects = [
             <div class="mt-5 text-center">
               <h5 class="mb-3 text-lg font-medium text-dark dark:text-white">Lenguajes Usados</h5>
               <div class="flex flex-wrap justify-center gap-3">
-                {project.languages.map((lang, langIndex) => (
+                {project.languages.map(lang => (
                   <span class="px-4 py-2 rounded-md bg-primary text-white text-sm font-medium">
                     {lang}
                   </span>
