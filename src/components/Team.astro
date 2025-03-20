@@ -1,9 +1,10 @@
 ---
 const teams = [
-  {name: "Matheus Ferrero", description: "Marketing Expert", image: "/assets/team/team-01.png", facebookLink: "#", twitterLink: "#", instagramLink: "#",},
-  {name: "Stuard Ferrel", description: "Digital Marketer", image: "/assets/team/team-02.png", facebookLink: "#", twitterLink: "#", instagramLink: "#",},
-  {name: "Eva Hudson", description: "Creative Designer", image: "/assets/team/team-03.png", facebookLink: "#", twitterLink: "#", instagramLink: "#",},
-  {name: "Jackie Sanders", description: "SEO Expert", image: "/assets/team/team-04.png", facebookLink: "#", twitterLink: "#", instagramLink: "#",},
+  {name: "David Ayme", description: "CEO / Project Manager", image: "/assets/team/team-01.jpg", facebookLink: "https://www.facebook.com/Davayme1", twitterLink: "#", instagramLink: "https://www.instagram.com/davayme/",},
+  {name: "Matías Tite", description: "Desarrollador Frontend", image: "/assets/team/team-02.jpg", facebookLink: "https://www.facebook.com/matias.tite", twitterLink: "#", instagramLink: "https://www.instagram.com/matite_14/",},
+  {name: "Henry Cortez", description: "Desarrollador Backend", image: "/assets/team/team-03.jpg", facebookLink: "https://www.facebook.com/henry.steven.5", twitterLink: "#", instagramLink: "https://www.instagram.com/devhcortez/",},
+  {name: "Edder Naranjo", description: "Desarrollador Frontend", image: "/assets/team/team-04.jpg", facebookLink: "https://www.facebook.com/share/19ZFJymSoS/", twitterLink: "#", instagramLink: "#",},
+  {name: "Keneth Paredes", description: "QA Tester / DevOps", image: "/assets/team/team-05.jpg", facebookLink: "https://www.facebook.com/kenneth.r.paredes", twitterLink: "#", instagramLink: "#",},
 ]
 ---
 
@@ -13,15 +14,11 @@ const teams = [
     <div class="-mx-4 flex flex-wrap">
       <div class="w-full px-4">
         <div class="mx-auto mb-[60px] max-w-[485px] text-center">
-          <span class="text-primary mb-2 block text-lg font-semibold">
-            Our Team Members
-          </span>
           <h2 class="mb-3 text-3xl leading-[1.2] font-bold text-dark dark:text-white sm:text-4xl md:text-[40px]">
-            Our Creative Team
+            Nuestro equipo de trabajo
           </h2>
-          <p class="text-body-color dark:text-dark-6 text-base">
-            There are many variations of passages of Lorem Ipsum available
-            but the majority have suffered alteration in some form.
+          <p class="text-body-color dark:text-dark-6 text-base text-justify">
+            Somos un equipo de desarrolladores, diseñadores y expertos en tecnología comprometidos con la innovación. Combinamos talento y experiencia para crear soluciones de software eficientes y adaptadas a cada proyecto. Juntos, transformamos ideas en realidad. 🚀
           </p>
         </div>
       </div>
@@ -157,6 +154,8 @@ const teams = [
                   <a
                     href={team.facebookLink}
                     class="hover:text-primary text-dark-6"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"
                       class="fill-current">
@@ -166,19 +165,10 @@ const teams = [
                     </svg>
                   </a>
                   <a
-                    href={team.twitterLink}
-                    class="hover:text-primary text-dark-6"
-                  >
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"
-                      class="fill-current">
-                      <path
-                        d="M16.4647 4.83752C16.565 4.72065 16.4343 4.56793 16.2859 4.62263C15.9549 4.74474 15.6523 4.82528 15.2049 4.875C15.7552 4.56855 16.0112 4.13054 16.2194 3.59407C16.2696 3.46467 16.1182 3.34725 15.9877 3.40907C15.458 3.66023 14.8864 3.84658 14.2854 3.95668C13.6913 3.3679 12.8445 3 11.9077 3C10.1089 3 8.65027 4.35658 8.65027 6.02938C8.65027 6.26686 8.67937 6.49818 8.73427 6.71966C6.14854 6.59919 3.84286 5.49307 2.24098 3.79696C2.13119 3.68071 1.93197 3.69614 1.86361 3.83792C1.68124 4.21619 1.57957 4.63582 1.57957 5.07762C1.57957 6.12843 2.15446 7.05557 3.02837 7.59885C2.63653 7.58707 2.2618 7.51073 1.91647 7.38116C1.74834 7.31808 1.5556 7.42893 1.57819 7.59847C1.75162 8.9004 2.80568 9.97447 4.16624 10.2283C3.89302 10.2978 3.60524 10.3347 3.30754 10.3347C3.23536 10.3347 3.16381 10.3324 3.0929 10.3281C2.91247 10.3169 2.76583 10.4783 2.84319 10.6328C3.35357 11.6514 4.45563 12.3625 5.73809 12.3847C4.62337 13.1974 3.21889 13.6816 1.69269 13.6816C1.50451 13.6816 1.42378 13.9235 1.59073 14.0056C2.88015 14.6394 4.34854 15 5.90878 15C11.9005 15 15.1765 10.384 15.1765 6.38067C15.1765 6.24963 15.1732 6.11858 15.1672 5.98877C15.6535 5.66205 16.0907 5.27354 16.4647 4.83752Z"
-                        fill="" />
-                    </svg>
-                  </a>
-                  <a
                     href={team.instagramLink}
                     class="hover:text-primary text-dark-6"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"
                       class="fill-current">
