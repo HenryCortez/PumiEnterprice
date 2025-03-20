@@ -24,7 +24,7 @@ const projects = [
 
 <!-- ====== Pricing Section Start -->
 <section
-  id="pricing"
+  id="projects"
   class="relative z-20 overflow-hidden bg-white dark:bg-dark pt-20 pb-12 lg:pt-[120px] lg:pb-[90px]"
 >
   <div class="container">
@@ -45,8 +45,8 @@ const projects = [
     <div class="-mx-4 flex flex-wrap justify-center">
      
       {projects.map(project => (
-        <div class="w-full px-4 md:w-1/2 lg:w-1/3">
-          <div class="wow fadeInUp relative z-10 mb-10 overflow-hidden rounded-xl bg-white dark:bg-dark-2 py-10 px-8 shadow-lg sm:p-12 lg:py-10 lg:px-6 xl:p-14" data-wow-delay=".15s">
+        <div class="w-full px-4 md:w-1/2 lg:w-1/3" style="">
+          <div class="wow fadeInUp relative z-10 mb-10 overflow-hidden rounded-xl bg-white dark:bg-dark-2 py-10 px-8 shadow-lg sm:p-12 lg:py-10 lg:px-6 xl:p-14 h-max" data-wow-delay=".15s">
             
             <!-- Título del Proyecto -->
             <h2 class="mb-4 text-2xl font-semibold text-dark dark:text-white text-center">
@@ -54,9 +54,9 @@ const projects = [
             </h2>
 
             <!-- Imagen Representativa -->
-            <div class="mb-5 flex flex-col items-center">
+            <div class="mb-5 flex flex-col items-center justify-between" style="height: 600px;">
               {project.image.map(lang => (
-                  <img src={lang} alt={project.title} class="rounded-lg max-h-fit object-cover w-full mb-8" />
+                  <img src={lang} alt={project.title} class="rounded-lg h-full object-cover w-full mb-8" />
      
                 ))}
                      </div>
@@ -68,7 +68,7 @@ const projects = [
 
             <!-- Lenguajes Usados -->
             <div class="mt-5 text-center">
-              <h5 class="mb-3 text-lg font-medium text-dark dark:text-white">Lenguajes Usados</h5>
+              <h5 class="mb-3 text-lg font-medium text-dark dark:text-white">Herramientas Utilizadas</h5>
               <div class="flex flex-wrap justify-center gap-3">
                 {project.languages.map(lang => (
                   <span class="px-4 py-2 rounded-md bg-primary text-white text-sm font-medium">
