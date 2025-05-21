@@ -12,7 +12,7 @@ category: 'Desarrollo de Software'
 author: 'Kenneth Paredes'
 bigImg:
   {
-    src: 'https://www.geeky-gadgets.com/wp-content/uploads/2024/08/Cursor-AI-code-editor.jpg',
+    src: 'https://assets-us-01.kc-usercontent.com/7beb5311-75a4-0049-50f5-8f58fd55aba7/cdbb9ff3-10ed-4ad4-b3f2-7a81e5ef57bf/Article_50.jpeg',
     alt: 'Vista detallada de la interfaz de edición en Cursor con IA activa'
   }
 authorImg: { src: '/assets/blog/article-author-01.png', alt: 'Autor del blog' }
@@ -24,9 +24,9 @@ postDetails:
     paraOne: 'Cursor es mucho más que un editor de texto: es una plataforma de desarrollo potenciada por inteligencia artificial, creada desde cero para maximizar la productividad de programadores modernos. Con funciones como autocompletado inteligente, edición en lenguaje natural y comprensión del contexto del proyecto, Cursor te acompaña en cada línea de código.',
     paraTwo: 'A diferencia de extensiones o editores tradicionales, Cursor es "AI-first", lo que significa que la inteligencia artificial no es un complemento, sino el corazón del entorno. Diseñado especialmente para proyectos en gran escala o entornos colaborativos, Cursor aprende de tu código, sugiere mejores patrones y puede automatizar tareas que normalmente tomarían horas.',
     title: '¿Cómo funciona Cursor?',
-    paraThree: 'Al instalar Cursor, accedes a un conjunto de herramientas inteligentes que incluyen: 1) **Autocompletado contextual**, que predice líneas enteras de código según tu estilo; 2) **Interfaz conversacional** con tres modos: Ask (consulta), Edit (modifica) y Agent (implementa o refactoriza); 3) **Controles de contexto** para personalizar qué archivos, carpetas o documentación se utilizan como referencia durante tus conversaciones con la IA.',
-    titleTwo: '3 razones para usar Cursor en tu flujo de trabajo',
-    paraFour: '1. Edición y navegación inteligente: Usa comandos como Tab, CMD+K o ⌘I para completar, modificar o entender tu código sin esfuerzo.  2. Personalización total: Ajusta modelos, claves API, estilos de codificación y preferencias desde los menús de configuración.  3. IA contextual: Cursor indexa automáticamente tu repositorio y permite utilizar referencias como @files, @git o @web para lograr respuestas precisas.',
+    paraThree: 'Una de las claves de Cursor es su capacidad para adaptarse al estilo del desarrollador mediante un autocompletado que no solo anticipa el siguiente carácter, sino que sugiere líneas enteras basadas en el contexto del proyecto. Además, incorpora una interfaz conversacional que permite interactuar con la IA mediante comandos simples para realizar preguntas, solicitar modificaciones o delegar tareas de refactorización. También ofrece opciones avanzadas para definir qué partes del código o documentación deben considerarse al momento de generar respuestas, lo que garantiza interacciones más precisas y relevantes.',
+    titleTwo: '¿Porqué usar Cursor en tu flujo de trabajo?',
+    paraFour: 'La experiencia de desarrollo mejora notablemente gracias a una navegación fluida que facilita completar y modificar código con atajos intuitivos. Asimismo, Cursor permite personalizar todos los aspectos de la interacción con la IA, desde la elección del modelo hasta los estilos de codificación y el manejo de claves API. Y como punto distintivo, su motor de inteligencia contextual analiza automáticamente el repositorio en uso, lo que permite al usuario obtener respuestas vinculadas directamente a su entorno mediante referencias específicas al código, historial de cambios o documentación técnica.',
     paraFive: 'Cursor es ideal tanto para desarrolladores individuales como para equipos que buscan una alternativa más integrada y centrada en IA que Copilot o editores clásicos. Puedes probarlo gratuitamente y elegir entre planes flexibles según tu carga de uso y los modelos que prefieras utilizar (GPT-4, Claude, etc.).',
   }
 quotes:
